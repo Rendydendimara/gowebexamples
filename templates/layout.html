@@ -1,0 +1,8 @@
+<h1>{{.PageTitle}}</h1>
+<ul>
+  {{range .Todos}} {{if .Done}}
+  <li style="color: green">{{.Title}}</li>
+  {{else}}
+  <li>{{.Title}}</li>
+  {{end}} {{end}}
+</ul>
